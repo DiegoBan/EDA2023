@@ -4,9 +4,9 @@ public class Jugador {
     public static boolean binarysearch(int[] arr, int target)
     {
         int L = 0; int R = arr.length-1;
-        int mid = (L + R)/2;
         while(L < R)
         {
+            int mid = (L + R)/2;
             if(arr[mid] == target)
             {
                 return true;
