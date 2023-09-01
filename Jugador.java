@@ -4,20 +4,20 @@ public class Jugador {
     public static boolean binarysearch(int[] arr, int target)
     {
         int L = 0; int R = arr.length-1;
-        while(L < R)
+        while(L <= R)
         {
             int mid = (L + R)/2;
             if(arr[mid] == target)
             {
                 return true;
             }
-            else if(arr[mid] < target)
+            else if(arr[mid] > target)
             {
-                L = mid+1;
+                R = mid-1;
             }
             else
             {
-                R = mid-1;
+                L = mid+1;
             }
         }
         return false;
