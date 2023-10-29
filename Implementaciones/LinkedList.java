@@ -152,16 +152,4 @@ public class LinkedList{
         }
         System.out.println("null");
     }
-    public static void main(String[] args)
-    {
-        LinkedList pepe = new LinkedList();
-        pepe.insertAtStart(4);
-        pepe.insertAtStart(45);
-        pepe.insertAtEnd(78);
-        pepe.insertAtEnd(5678);
-        pepe.print();
-        System.out.println(pepe.size());
-        System.out.println(pepe.get(3));
-        System.out.println(pepe.indexOf(78));
-    }
 }
